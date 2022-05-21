@@ -1,0 +1,16 @@
+body{
+    background-color: #F2F3F4  ;
+}
+input.ng-invalid.ng-touched {
+    border: 1px solid red;
+    box-shadow: 0 0 13px inset rgba(255, 1, 1, 0.082);
+}
+.btn{
+    background-color: #0B5345;
+    color: white;
+    border: none;
+}
+.btn:hover{
+    background-color: #0eb32f ;
+    border: none;
+}

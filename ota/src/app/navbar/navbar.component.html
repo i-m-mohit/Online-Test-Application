@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head></head>
+<body>
+	<div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm fixed-top">
+		<h5 class="my-0 mr-md-auto font-weight-normal"><a [routerLink] = "['/']"><img src="../assets/images/quizmain-removebg-preview.png" style="height: 40px;width:90px;"></a></h5>
+		<nav class="my-2 my-md-0 mr-md-3">
+			<a class="p-2 text-dark" [routerLink] = "['/about']">About</a>
+			<span *ngIf ='uname!=""' class = "p-2 text-dark"> |&nbsp; {{uname}}</span>
+      </nav>
+  </div>
+  <div id="id01" class="modal">
+    <form class="modal-content animate">
+      <div class="imgcontainer">
+        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close">&times;</span>
+      </div>
+    </form>
+  </div>
+  <script>
+    var modal = document.getElementById('id01');
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+  </script>
+</body>
+</html>
